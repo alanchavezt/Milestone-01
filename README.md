@@ -1,10 +1,7 @@
 Three parts:
 
-- Parsing:
-    - 
+- Parsing: 
 
-- Calculating
-    - 
+- Calculating: 
 
-- Displaying
-    - 
+- Displaying: 
