@@ -1,6 +1,3 @@
-#include <iostream>
-using namespace std;
-
 /*	I/O
 		READ			10	read into memory
 		Write			11
@@ -23,6 +20,13 @@ using namespace std;
 		CONTINUE
 	Terminate program	-99999
 */
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <iterator>
+
+using namespace std;
 
 void Parse_Input_From_File(int command, int location) {
 
