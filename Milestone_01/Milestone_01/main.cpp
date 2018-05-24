@@ -41,9 +41,75 @@ void Calculate_Operations() {
 
 	// Things will be calculated here
 
+	//To determine which Command has been sent, and execute calculations. -Scott
+	switch (command) {
+	
+	//Read
+	case 10:
+		break;
+	
+	//Write
+	case 11:
+		break;
+	
+	//Load
+	case 20:
+		break;
+	
+	//Store
+	case 21
+		break;
+
+	//Addition 
+	case 30:
+		result = accumulator + memory[location];
+		break;
+
+	//Subtraction 
+	case 31:
+		result = accumulator - memory[location];
+		break;
+
+	//Division 
+	case 32:
+		//Divisor can't be 0
+		if (memory[location] != 0) {
+			result = accumulator / memory[location];
+		}
+		else{
+			result = 99999
+		}
+		break;
+
+	//Multiplication 
+	case 33:
+		result = accumulator * memory[location];
+		break;
+	
+	//Branch
+	case 40:
+		break;
+	
+	//BranchNeg
+	case 41:
+		break;
+	
+	//BranchZero
+	case 42:
+		break;
+	
+	//Halt
+	case 43:
+		break;
+	}
+	//Cases for Memdump, break, continue? -Scott
+
+
 	// Output_Data()
 	
 }
+
+
 
 // Output_Data()
 
