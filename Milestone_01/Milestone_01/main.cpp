@@ -34,8 +34,9 @@ void Calculate_Operations() {
 	int memory[MEMORY_SIZE];
 	int accumulator;
 	int result;
+	int inputToMemory, outputFromMemory;
 
-	int command, location;
+	int command, location, branchLocation;
 
 	// Parse_Input_From_File(command, location)
 
@@ -46,6 +47,7 @@ void Calculate_Operations() {
 	
 	//Read
 	case 10:
+		memory[location] = inputToMemory;
 		break;
 	
 	//Write
@@ -54,10 +56,11 @@ void Calculate_Operations() {
 	
 	//Load
 	case 20:
+		accumulator = memory[location];
 		break;
 	
 	//Store
-	case 21
+	case 21:
 		break;
 
 	//Addition 
@@ -76,8 +79,8 @@ void Calculate_Operations() {
 		if (memory[location] != 0) {
 			result = accumulator / memory[location];
 		}
-		else{
-			result = 99999
+		else {
+			result = 99999;
 		}
 		break;
 
